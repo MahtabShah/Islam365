@@ -10,24 +10,44 @@
         * {
             margin: 0;
             padding: 0;
+            border: none;
+
+        }
+
+        html {
+            height: 100vh;
+            background-color: rgb(0, 0, 0);
 
         }
 
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
+
             background-color: #f4f4f4;
+            background-color: rgba(0, 0, 0, 0.934);
+
             overflow-x: hidden;
+            font-family: sans-serif;
+            height: 100%;
+            /* overflow: hidden; */
+
+            /* border: 1px solid red; */
         }
 
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
 
         header {
             background-color: #003366;
+            background-color: #0660ba;
+
             color: white;
-            padding: 30px;
+            padding: 20px;
             text-align: center;
-            height: 100px;
+            /* height: 0px; */
             /* border: 2px solid red; */
             display: flex;
             align-items: center;
@@ -51,7 +71,7 @@
         }
 
         .site-title {
-            font-size: 3.5rem;
+            font-size: 1.5rem;
             font-weight: bold;
         }
 
@@ -61,13 +81,13 @@
 
         .navbar {
             display: flex;
-            gap: 30px;
+            gap: 10px;
         }
 
         .navbar a {
             color: white;
             text-decoration: none;
-            font-size: 1.5rem;
+            font-size: 1rem;
             padding: 10px 20px;
             border-radius: 5px;
         }
@@ -92,15 +112,15 @@
 
         .sideOption {
             /* border: 1px solid red; */
-            height: calc(100vh - 165px);
-            width: 600px;
+            height: 100%;
+            width: 320px;
             /* min-width: 250px; */
             /* height: 100px; */
         }
 
         iframe {
             width: 100%;
-            height: 100%;
+            height: calc(100%);
             border: none;
         }
 
@@ -118,7 +138,7 @@
 
         /* For Webkit browsers like Chrome, Safari, set scrollbar thumb style */
         iframe::-webkit-scrollbar-thumb {
-            background: rgba(0, 0, 0, 0.3);
+            /* background: rgb(250, 249, 249); */
             /* Optional: change the color of the thumb */
             border-radius: 5px;
             /* Optional: add border-radius to the scrollbar */
@@ -136,49 +156,152 @@
 
         .middlePart {
             display: flex;
+            flex-grow: 1;
+            /* border: 1px solid red; */
+
 
         }
 
         .content {
-            border: 5px solid red;
+            /* border: 5px solid red; */
             flex-grow: 1;
-            background-color: rgb(126, 249, 138);
+            background-color: rgba(0, 0, 0, 0.934);
+            padding: 10px;
+
+        }
+
+        .container {
+            height: 100%;
+        }
+
+
+        .islamic-footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 1rem;
+            /* margin-top: 10px; */
+        }
+
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .footer-heading {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .footer-subheading,
+        .footer-description,
+        .footer-connect {
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        .footer-social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .social-link {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .social-icon {
+            height: 24px;
+            width: 24px;
+        }
+
+        .social-link:hover {
+            color: #FFD700;
+        }
+
+        .footer-copy {
+            font-size: 0.9rem;
+            margin-top: 15px;
         }
     </style>
 </head>
 
 <body>
 
-    <header>
-        <div class="header-content">
-            <div class="site-title">
-                <span>Islam365</span>
+    <div class="main-container">
+
+        <header>
+            <div class="header-content">
+                <div class="site-title">
+                    <span>Islam365</span>
+                </div>
+                <div class="navbar">
+                    <a href="#">Home</a>
+                    <a href="#">Articles</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Contact</a>
+                </div>
             </div>
-            <div class="navbar">
-                <a href="#">Home</a>
-                <a href="#">Articles</a>
-                <a href="#">About Us</a>
-                <a href="#">Contact</a>
-            </div>
-        </div>
-        <!-- <div class="arabic-quote">
+            <!-- <div class="arabic-quote">
         <p>اللہ تعالی کا نام لے کر، ہمارے پیارے امام، امام احمد رضا خان رحمۃ اللہ علیہ کی رہنمائی میں اسلام کی حقیقت کو سمجھیے!</p>
     </div> -->
-    </header>
+        </header>
 
-    <div class="middlePart">
+        <div class="middlePart">
 
 
-        <div class="sideOption">
-            <iframe class="iframe" src="files/surahNmae.html"></iframe>
+            <div class="sideOption">
+                <iframe class="iframe" src="files/surahNmae.html"></iframe>
+            </div>
+
+            <div class="content">
+                <div class="container">
+                    <iframe src="files\surahFatiha.html"></iframe>
+                </div>
+            </div>
         </div>
+    </div>
 
-        <div class="content">
-            <h1>
-                Next Step
 
-            </h1>
-        </div>
+    <div>
+        <footer class="islamic-footer">
+            <div class="footer-content">
+                <p class="footer-heading">Maslak-e-Aala Hazrat | Sunni Islam</p>
+                <p class="footer-subheading">"Love for the Prophet ﷺ is the essence of our faith."</p>
+                <p class="footer-description">
+                    Guiding lives with the teachings of Imam Ahmed Raza Khan Barelvi (رحمۃ اللہ علیہ).
+                </p>
+                <p class="footer-connect">
+                    Connect with us for authentic Islamic knowledge, Fatawa Razawiyyah, and teachings of Aala Hazrat.
+                </p>
+                <div class="footer-social-links">
+                    <a href="#" class="social-link">
+                        <img src="files/facebook-icon.png" alt="Facebook" class="social-icon"> Facebook
+                    </a>
+                    <a href="#" class="social-link">
+                        <img src="files/twitter-icon.png" alt="Twitter" class="social-icon"> Twitter
+                    </a>
+                    <a href="#" class="social-link">
+                        <img src="files/youtube-icon.png" alt="YouTube" class="social-icon"> YouTube
+                    </a>
+                    <a href="#" class="social-link">
+                        <img src="files/instagram-icon.png" alt="Instagram" class="social-icon"> Instagram
+                    </a>
+                </div>
+                <p class="footer-copy">
+                    &copy; 2024 Islam365 | All Rights Reserved | Dedicated to Sunni Maslak-e-Aala Hazrat
+                </p>
+            </div>
+        </footer>
+
     </div>
 
 </body>
