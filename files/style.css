@@ -64,15 +64,17 @@ header span {
 
 @media(max-width:400px){
 
-    header{
-        padding: 10px 20px;
-        width: 400px;
-
-    }
+   
     .header-content{
         flex-direction: column;
         gap: 12px;
         justify-content: center;
+    }
+
+    header{
+        padding: 10px 20px;
+        width: 400px;
+
     }
 }
 
