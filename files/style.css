@@ -62,11 +62,11 @@ header span {
 }
 
 
-@media(max-width:600px){
+@media(max-width:400px){
 
     header{
         padding: 10px 20px;
-        /* width: 600px; */
+        width: 400px;
 
     }
     .header-content{
