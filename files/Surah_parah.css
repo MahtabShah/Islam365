@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    /* padding: 20px; */
+    /* background-color: #d1cfe2; */
+    /* background-color: #3cce5c; */
+    /* background-color: #003366; */
+
+    overflow-x: hidden;
+    padding: 0;
+
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.surah-list,.parah-list {
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    /* gap: 10px; */
+    justify-content: center;
+    /* border: 1px solid rgb(59, 56, 56); */
+    /* width: 400px; */
+    /* align-items: center; */
+    margin-top: 16px;
+    /* overflow-x: hidden; */
+
+    /* height: 100vh; */
+    /* overflow-y: auto; */
+    /* overflow-x: hidden; */
+}
+
+.surah-item, .para-item {
+    background-color:rgba(55, 131, 254, 0.078);
+    padding: 3px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    /* text-align: center; */
+    /* width: calc(100% - 18px); */
+    border: 1px solid rgba(40, 116, 239, 0.331);
+
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    height: 45px;
+    color: rgb(42, 40, 40);
+}
+
+.surah-item:hover {
+    background-color: #d6fad9;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+.para-item:hover {
+    background-color: #d6fad9;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}

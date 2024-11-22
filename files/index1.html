@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Islam365</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="files/footer.css">
+    <style>
+        * {
+            /* margin: 0px; */
+            /* padding: 0; */
+            border: none;
+            /* border: 1px solid red; */
+
+        }
+
+        html {
+            /* height: 100vh; */
+            background-color: rgb(148, 24, 24);
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+
+            background-color: #f4f4f4;
+            background-color: rgba(0, 0, 0, 0.934);
+
+            overflow-x: hidden;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            /* overflow: hidden; */
+
+            /* border: 1px solid red; */
+        }
+
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            /* height: 100%; */
+        }
+
+        header {
+            background-color: #003366;
+            background-color: #0660ba;
+
+            color: white;
+            padding: 20px;
+            text-align: center;
+            /* height: 0px; */
+            /* border: 2px solid red; */
+            display: flex;
+            align-items: center;
+            /* flex-direction: column; */
+            /* justify-content: space-between; */
+            /* gap: 2rem; */
+            /* display:grid ; */
+            /* grid-template-rows: 1fr 1fr; */
+
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* max-width: 1200px; */
+            /* margin: 0 auto; */
+            /* border: 2px solid rgb(255, 238, 0); */
+            flex-grow: 1;
+
+        }
+
+        .site-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .site-title span {
+            color: #FFD700;
+        }
+
+        .navbar {
+            display: flex;
+            gap: 10px;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .navbar a:hover {
+            background-color: #FFD700;
+            color: black;
+        }
+
+        .arabic-quote {
+            font-size: 2.5rem;
+            font-family: 'Times New Roman', serif;
+            color: #FFD700;
+            font-weight: bold;
+            /* border: 2px solid red; */
+
+        }
+
+
+
+
+
+        .sideOption {
+            /* border: 1px solid red; */
+            /* height: 100%; */
+            width: 320px;
+            /* min-width: 250px; */
+            /* height: 100px; */
+        }
+
+        iframe {
+            width: 100%;
+            height: calc(100%);
+            border: none;
+                }
+
+
+        .middlePart {
+            display: flex;
+            flex-grow: 1;
+            /* border: 1px solid red; */
+
+
+        }
+
+        .content {
+            /* border: 5px solid red; */
+            flex-grow: 1;
+            background-color: rgba(0, 0, 0, 0.934);
+            padding: 10px;
+            height: 100vh;
+
+        }
+
+        .container {
+            height: 100%;
+            overflow-y: auto;
+        }
+
+
+       
+    </style>
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <header>
+            <div class="header-content">
+                <div class="site-title">
+                    <span>Islam365</span>
+                </div>
+                <div class="navbar">
+                    <a href="#">Home</a>
+                    <a href="#">Articles</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+            <!-- <div class="arabic-quote">
+        <p>اللہ تعالی کا نام لے کر، ہمارے پیارے امام، امام احمد رضا خان رحمۃ اللہ علیہ کی رہنمائی میں اسلام کی حقیقت کو سمجھیے!</p>
+    </div> -->
+        </header>
+
+        <div class="middlePart">
+
+
+            <div class="sideOption">
+                <iframe class="iframe" src="files/surahNmae.html"></iframe>
+            </div>
+
+            <div class="content">
+                <div class="container">
+                    <iframe src="files\surahFatiha.html"></iframe>
+                    <iframe src="files/Al-Baqrah.html" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+        <footer class="islamic-footer">
+            <div class="footer-content">
+                <p class="footer-heading">Maslak-e-Aala Hazrat | Sunni Islam</p>
+                <p class="footer-subheading">"Love for the Prophet ﷺ is the essence of our faith."</p>
+                <p class="footer-description">
+                    Guiding lives with the teachings of Imam Ahmed Raza Khan Barelvi (رحمۃ اللہ علیہ).
+                </p>
+                <p class="footer-connect">
+                    Connect with us for authentic Islamic knowledge, Fatawa Razawiyyah, and teachings of Aala Hazrat.
+                </p>
+                <div class="footer-social-links">
+                    <a href="#" class="social-link">
+                        <img src="files/facebook-icon.png" alt="Facebook" class="social-icon"> Facebook
+                    </a>
+                    <a href="#" class="social-link">
+                        <img src="files/twitter-icon.png" alt="Twitter" class="social-icon"> Twitter
+                    </a>
+                    <a href="#" class="social-link">
+                        <img src="files/youtube-icon.png" alt="YouTube" class="social-icon"> YouTube
+                    </a>
+                    <a href="#" class="social-link">
+                        <img src="files/instagram-icon.png" alt="Instagram" class="social-icon"> Instagram
+                    </a>
+                </div>
+                <p class="footer-copy">
+                    &copy; 2024 Islam365 | All Rights Reserved | Dedicated to Sunni Maslak-e-Aala Hazrat
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

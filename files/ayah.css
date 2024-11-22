@@ -1,0 +1,67 @@
+*{
+    font-family: sans-serif;
+    line-height: 1.5;
+    margin: 0;
+
+
+}
+.surah{
+    /* border: 1px solid rgba(194, 198, 199, 0.55); */
+    border-radius: 7px;
+
+}
+
+section p {
+    /* border-radius: 5px; */
+    padding: 10px;
+    font-size: 1rem;
+    color: rgb(40, 41, 43);
+    text-align: justify;
+    /* border: 2px solid red; */
+}
+
+.ayah{
+    border: 1px solid  rgba(40, 116, 239, 0.436);
+    /* border: 1px solid rgba(82, 5, 247, 0.932); */
+    padding: 10px;
+    margin: 20px 5px;
+    border-radius: 4px;
+    /* background-color: rgb(220, 226, 229); */
+
+
+}
+
+.ayah-option {
+    /* border: 2px solid rgb(22, 218, 224); */
+    /* padding: 10px; */
+    display: flex;
+    justify-content: end;
+
+}
+
+.ayah-option span{
+
+    border: 1px solid rgba(236, 234, 229, 0.532);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin: 4px;
+    box-shadow: 0 0 1px rgb(198, 195, 188);
+    font-size: 0.7rem;
+    color: rgb(37, 35, 35);
+}
+
+.ayah-option span:hover{
+    box-shadow: 0 0 3px rgb(198, 195, 188);
+    background-color: aliceblue;
+    cursor: pointer;
+    border-bottom: 1px solid;
+}
+
+
+
+.arabic{
+    font-size: xx-large;
+    direction: rtl;
+
+}
+

@@ -1,0 +1,56 @@
+.islamic-footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+    /* margin-top: 10px; */
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-heading {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.footer-subheading,
+.footer-description,
+.footer-connect {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.footer-social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.social-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.social-icon {
+    height: 24px;
+    width: 24px;
+}
+
+.social-link:hover {
+    color: #FFD700;
+}
+
+.footer-copy {
+    font-size: 0.9rem;
+    margin-top: 15px;
+}
