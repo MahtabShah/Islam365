@@ -44,7 +44,12 @@ for (let i = 0; i < sections.length; i++) {
 
         // Copy to clipboard
         navigator.clipboard.writeText(combinedText).then(() => {
-            alert("Text copied to clipboard!");
+            // alert("Text copied to clipboard!");
+            BtnCopy.innerText = 'copied';
+
+            setTimeout(()=>{
+            BtnCopy.innerText = 'copy';} , 1000);
+                
 
         }).catch(err => {
             console.error("Failed to copy text: ", err);
@@ -84,7 +89,7 @@ for (let i = 0; i < sections.length; i++) {
             })
             .catch(error => {
                 console.error("Error:", error);
-                // alert("Translation failed! || attach your API Key");
+                alert("Translation failed! || attach your API Key");
             });
         // });
         
