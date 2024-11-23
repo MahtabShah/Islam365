@@ -32,7 +32,7 @@ header {
     flex-direction: column;
     background-color: rgb(40, 116, 239);
     color: rgb(238, 235, 230);
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     padding: 20px;
 }
 
@@ -61,22 +61,6 @@ header span {
 
 }
 
-
-@media(max-width:400px){
-
-   
-    .header-content{
-        flex-direction: column;
-        gap: 12px;
-        justify-content: center;
-    }
-
-    header{
-        padding: 10px 20px;
-        width: 400px;
-
-    }
-}
 
 .site-title {
     font-size: 1.5rem;
@@ -206,4 +190,32 @@ iframe{
     transition-duration: 10ms;
     border-bottom: 1px solid rgba(191, 213, 247, 0.934);
 
+}
+
+
+
+
+
+@media(max-width:400px){
+
+   
+    .header-content{
+        flex-direction: column;
+        gap: 12px;
+        justify-content: center;
+    }
+
+    header{
+        padding: 10px 20px;
+        width: 400px;
+        display: none;
+
+
+    }
+
+    .container{
+        height: 100vh;
+    }
+
+   
 }
