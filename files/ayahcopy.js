@@ -43,7 +43,13 @@ iframes.forEach(iframe => {
 
             // Copy to clipboard
             navigator.clipboard.writeText(combinedText).then(() => {
-                alert("Text copied to clipboard!");
+                // alert("Text copied to clipboard!");
+                Btn.innerText = 'copied';
+
+                setTimeout(()=>{
+                Btn.innerText = 'copy';
+                    
+                }, 1000)
 
             }).catch(err => {
                 console.error("Failed to copy text: ", err);
