@@ -36,13 +36,14 @@ header {
     padding: 20px;
 }
 
-.peace{
+.peace {
     color: rgb(245, 241, 241);
     font-size: 1.2rem;
     padding: 4px;
     margin-top: 20px;
     margin: auto;
 }
+
 header span {
     font-size: 1.5rem;
 
@@ -110,6 +111,7 @@ header span {
 .container {
     /* height:100vh; */
     border: 2px solid rgba(40, 116, 239, 0.952);
+
     font-size: 1rem;
     width: 400px;
     height: 86vh;
@@ -117,105 +119,134 @@ header span {
     margin: auto;
     border-radius: 3px;
     position: relative;
+    /* margin-left: 160px; */
 }
 
-.nav-section{
+.nav-section {
     /* border: 1px solid red; */
     background-color: #b3c0f3;
     background-color: rgba(40, 116, 239, 0.934);
+    background-color: rgb(40, 116, 239);
+
 
     padding: 7px;
-    position:sticky;
+    position: sticky;
     top: 0;
 }
 
-.sticky{
+.sticky {
     /* border: 1px solid red; */
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 2px 10px;
-    
-   
+
+
 }
 
-.sticky span{
+.sticky span {
     color: rgb(247, 242, 242);
     cursor: pointer;
 
 }
 
 
-.container span{
+.container span {
     margin-left: 10px;
 }
 
 
 
 .container::-webkit-scrollbar {
-    width: 0px; 
-    height: 6px; /* Sets the scrollbar height */
+    width: 0px;
+    height: 6px;
+    /* Sets the scrollbar height */
 }
 
 .container::-webkit-scrollbar-thumb {
-    background-color: #555; /* Color of the thumb */
-    border-radius: 10px; /* Rounded corners */
-    border: 2px solid transparent; /* Adds space around thumb */
-    background-clip: padding-box; /* Ensures transparency works */
+    background-color: #555;
+    /* Color of the thumb */
+    border-radius: 10px;
+    /* Rounded corners */
+    border: 2px solid transparent;
+    /* Adds space around thumb */
+    background-clip: padding-box;
+    /* Ensures transparency works */
 }
 
 
 iframe::-webkit-scrollbar {
-    width: 0px; 
+    width: 0px;
 }
 
 
-iframe{
+iframe {
     width: 100%;
     color: rgb(28, 28, 27);
-    
+
     /* border: 1px solid red; */
     /* height: 100vh; */
 }
 
 
-.surahSection,.parah{
+.surahSection,
+.parah {
     display: none;
     transition-duration: 300ms;
 
 }
 
-.activeBtn{
+.activeBtn {
     display: flex;
     transition-duration: 10ms;
     border-bottom: 1px solid rgba(191, 213, 247, 0.934);
 
 }
 
+/* .display {
+    position: fixed;
+    width: 160px;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    background-color: #b3c0f3;
+    background-color: rgba(40, 116, 239, 0.934);
+    background-color: rgb(40, 116, 239);
+
+    overflow-y: auto;
+
+} */
 
 
+.translate-btn button{
+    background: none;;
+    border: none;
+    border-bottom: 1px solid;
+    margin: 2px 20px;
+    color: white;
+    font-size: 0.7rem;
+    cursor: pointer;
+}
 
 
-@media(max-width:400px){
-
-   
-    .header-content{
-        flex-direction: column;
-        gap: 12px;
-        justify-content: center;
-    }
-
-    header{
-        padding: 10px 20px;
-        width: 400px;
+@media(max-width:440px){
+    header {
+        padding: 20px 20px;
+        width: 300px;
         display: none;
 
 
     }
-
+    
     .container{
+        width: 100%;
+        margin: 0;
         height: 100vh;
+        border-radius: 0;
     }
 
-   
+    .nav-section {
+        padding: 14px 7px;
+    }
+
 }

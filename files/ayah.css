@@ -36,18 +36,20 @@ section p {
     /* padding: 10px; */
     display: flex;
     justify-content: end;
+    flex-wrap: wrap;
 
 }
 
 .ayah-option span{
 
-    border: 1px solid rgba(236, 234, 229, 0.532);
+    border: 1px solid rgba(231, 228, 221, 0.532);
     border-radius: 3px;
     padding: 0 10px;
     margin: 4px;
     box-shadow: 0 0 1px rgb(198, 195, 188);
     font-size: 0.7rem;
     color: rgb(37, 35, 35);
+    flex-grow: 1;
 }
 
 .ayah-option span:hover{
