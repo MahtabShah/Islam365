@@ -67,3 +67,7 @@ section p {
 
 }
 
+.reporttext{
+    max-width: -webkit-fill-available;
+    min-width: -webkit-fill-available;
+}

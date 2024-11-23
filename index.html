@@ -26,95 +26,96 @@
             </div>
         </div>
 
-       
+
 
     </header>
 
     <div class="container-1">
 
-    <div class="container">
-        <section class="nav-section">
-            <div class="sticky">
-                <span class="" id="switchSection">Al-Quran-ul-Mazeed</span>
-                <span class="Allsurahbtn" id="surahSection">Surah</span>
-                <span class="parahbtn" id="parah">Parah</span>
-            </div>
-
-            <div class="translate-btn">
-                <button id="hindiBtn">Hindi</button>
-                <button id="arabicBtn">Arabic</button>
-                <button id="urduBtn">Urdu</button>
-                <button id="englishBtn">English</button>
-            </div>
-
-        </section>
-
-        <section class="switchSection">
-
-            <section class="section1">
-                <div class="surah">
-                    <iframe src="files/surahFatiha.html" frameborder="0" scrolling="no" ;></iframe>
+        <div class="container">
+            <section class="nav-section">
+                <div class="sticky">
+                    <span class="" id="switchSection">Al-Quran-ul-Mazeed</span>
+                    <span class="Allsurahbtn" id="surahSection">Surah</span>
+                    <span class="parahbtn" id="parah">Parah</span>
                 </div>
-            </section>
 
-            <section class="section2">
-                <div class="surah">
-                    <iframe src="files/Al-Baqrah.html" frameborder="0" scrolling="no" ;></iframe>
+                <div class="translate-btn">
+                    <button id="hindiBtn">Hindi</button>
+                    <button id="arabicBtn">Arabic</button>
+                    <button id="urduBtn">Urdu</button>
+                    <button id="englishBtn">English</button>
                 </div>
 
             </section>
 
+            <section class="switchSection">
 
-        </section>
+                <section class="section1">
+                    <div class="surah">
+                        <iframe src="files/surahFatiha.html" frameborder="0" scrolling="no" ;></iframe>
+                    </div>
+                </section>
+
+                <section class="section2">
+                    <div class="surah">
+                        <iframe src="files/Al-Baqrah.html" frameborder="0" scrolling="no" ;></iframe>
+                    </div>
+
+                </section>
+
+
+            </section>
 
 
 
-        <section class="surahSection">
-            <iframe src="files/surahNmae.html" frameborder="0" scrolling="no" id="myIframe"></iframe>
-        </section>
+            <section class="surahSection">
+                <iframe src="files/surahNmae.html" frameborder="0" scrolling="no" id="myIframe"></iframe>
+            </section>
 
-        <section class="parah">
-            <iframe src="files\parahName.html" frameborder="0" scrolling="no"  ></iframe>
-        </section>
+            <section class="parah">
+                <iframe src="files\parahName.html" frameborder="0" scrolling="no"></iframe>
+            </section>
 
 
+        </div>
+
+        <!-- <section class="display"></section> -->
     </div>
-
-    <!-- <section class="display"></section> -->
-</div>
 
 
     <script src="script.js"></script>
+    <script src="files/ayahcopy.js"></script>
     <script src="Surahswitch.js"></script>
     <script>
         document.getElementById("hindiBtn").addEventListener("click", () => translateSurahs('hi'));
         document.getElementById("arabicBtn").addEventListener("click", () => translateSurahs('ar'));
         document.getElementById("englishBtn").addEventListener("click", () => translateSurahs('en'));
         document.getElementById("urduBtn").addEventListener("click", () => translateSurahs('ur'));
-    
+
         function translateSurahs(language) {
 
-            const iframes = document.querySelectorAll('iframe'); 
+            const iframes = document.querySelectorAll('iframe');
 
-            iframes.forEach(iframe=>{
+            iframes.forEach(iframe => {
 
-            
-            // iFrame select karna
-            const iframeDoc = iframe.contentDocument || iframe.contentWindow.document; // iFrame ka document
-            const Items = iframeDoc.querySelectorAll('.list > div');
-            Items.forEach(item => {
-                const translation = item.getAttribute(`data-surah-${language}`) || item.getAttribute(`data-parah-${language}`);
-                if (language == 'ar' || language == 'ur') {
-                    item.style.direction = `rtl`;                
-                    item.style.fontSize = `1.5rem`;                
-                }else{
-                    item.style.direction = `ltr`;                
-                    item.style.fontSize = `1rem`;       
-                }
-                item.textContent = translation;
-            });
 
-        })
+                // iFrame select karna
+                const iframeDoc = iframe.contentDocument || iframe.contentWindow.document; // iFrame ka document
+                const Items = iframeDoc.querySelectorAll('.list > div');
+                Items.forEach(item => {
+                    const translation = item.getAttribute(`data-surah-${language}`) || item.getAttribute(`data-parah-${language}`);
+                    if (language == 'ar' || language == 'ur') {
+                        item.style.direction = `rtl`;
+                        item.style.fontSize = `1.5rem`;
+                    } else {
+                        item.style.direction = `ltr`;
+                        item.style.fontSize = `1rem`;
+                    }
+                    item.textContent = translation;
+                });
+
+            })
 
         }
     </script>
