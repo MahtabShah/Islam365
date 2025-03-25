@@ -2,7 +2,7 @@
     background-color: #003366;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 24px;
     font-size: 1rem;
     /* margin-top: 10px; */
 }
@@ -21,7 +21,7 @@
 .footer-subheading,
 .footer-description,
 .footer-connect {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     font-size: 1rem;
 }
 
