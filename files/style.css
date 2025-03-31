@@ -6,7 +6,6 @@
     font-family: sans-serif;
     line-height: 1.4;
     font-size: 1rem;
-    /* font-weight: 600; */
     color: rgb(56, 55, 55);
 
 }
@@ -100,17 +99,15 @@ header span {
 
 
 .container {
-    /* height:100vh; */
     border: 2px solid rgba(40, 116, 239, 0.952);
-
     font-size: 1rem;
     width: 400px;
-    height: 86vh;
+    height: 84vh;
     overflow-y: auto;
     margin: auto;
     border-radius: 3px;
     position: relative;
-    /* margin-left: 160px; */
+    margin: 10px;
 }
 
 .nav-section {
@@ -144,6 +141,7 @@ header span {
 
 .container span {
     margin-left: 10px;
+    
 }
 
 
@@ -193,20 +191,6 @@ iframe {
     border-bottom: 1px solid rgba(191, 213, 247, 0.934);
 
 }
-
-/* .display {
-    position: fixed;
-    width: 160px;
-    height: 100vh;
-    top: 0;
-    bottom: 0;
-    background-color: #b3c0f3;
-    background-color: rgba(40, 116, 239, 0.934);
-    background-color: rgb(40, 116, 239);
-
-    overflow-y: auto;
-
-} */
 
 
 .translate-btn button{
